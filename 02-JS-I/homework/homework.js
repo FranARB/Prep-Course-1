@@ -155,8 +155,8 @@ function elevarAlCuadrado(num) {
 
 }
 
-let squared = squareMyNumber(5);
-console.log(" 5 ** 2 = ",squared);
+let squaredt = squareMyNumber(5);
+console.log(" 5 ** 2 = ",squaredt);
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
