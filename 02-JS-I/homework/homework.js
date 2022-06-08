@@ -41,12 +41,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var x = 10;
-  var y = 12;
-
-  var c = x - y;
-
-  console.log(c);
+  return (c = x - y);
   
 }
 
@@ -113,7 +108,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+
   if(num >= 50){
     c == true;
     return(c);
@@ -178,7 +173,7 @@ function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   
-return num ** exponent;
+return (numelevado = num ** exponent);
 
 }
 
