@@ -28,31 +28,54 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  
+  console.log(str);
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  
+  var x = 10;
+  var y = 12;
+
+  var c = x + y;
+
+  console.log(c);
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
+  var x = 10;
+  var y = 12;
+
+  var c = x - y;
+
+  console.log(c);
   
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  
+  var x = 10;
+  var y = 12;
+
+  var c = x * y;
+
+  console.log(c);
+
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
+  var x = 10;
+  var y = 12;
+
+  var c = x * y;
+
+  console.log(c);
   
 }
 
@@ -60,20 +83,52 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  var x = 10;
+  var y = 12;
+
+  if(x==y){
+
+    c == true;
+    console.log(c);
+  }
+  else{
+    c == false;
+    console.log(c);
+  }
+
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  const str1 = "Fabian";
+  const str2 = "Julian";
+
+  if(str1==str2){
+    console.log(true);
+  }
+  else{
+    console.log(false);
+  }
+
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  var num = 200;
+
+  if(num <= 90){
+    c == false;
+    console.log(c);
+  }
+  else{
+    c == true;
+    console.log(c);
+  }
   
 }
 
@@ -82,11 +137,32 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
+  return (num >= 50);
+
+  //var num = 200;
+
+  //if(num >= 50){
+    //c == true;
+    //console.log(c);
+  //}
+  //else{
+    //c == false;
+    //console.log(c);
+  //}
+
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+
+  return(x % y);
+  //var x = 21;
+  //var y = 5;
+
+  //var c = x % y;
+
+  //console.log(c);
   
 }
 
@@ -94,6 +170,8 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+
+return (num % 2 == 0);    
   
 }
 
@@ -101,26 +179,40 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+
+return (num % 2 == 0);
+
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+     
+    return num ** 2
+
 }
+
+let squared = squareMyNumber(5);
+console.log(" 5 ** 2 = ",squared);
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+
+  return num ** 3;
+
 }
+
+let squared = squareMyNumber(5);
+console.log(" 5 ** 3 = ",squared);
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   
+return num ** exponent;
+
 }
 
 function redondearNumero(num) {
