@@ -9,9 +9,9 @@ function obtenerMayor(x, y) {
   if(x > y){
     return x;
   }else if (x == y){
-    return y;
+    return y || y;
   }else{
-    return y;
+    return  y;
   }
 
 }
@@ -65,13 +65,13 @@ function colors(color) {
   //Usar el statement Switch.
   switch (color){
     case "blue":
-      return "this is " + color;
+      return "This is " + color;
     case "red":
-      return "this is " + color;
+      return "This is " + color;
     case "green":
-    return "this is " + color;
+    return "This is " + color;
     case "orange":
-    return "this is " + color;
+    return "This is " + color;
     default:
       return "Color not found";
   }
@@ -104,7 +104,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-if(numero < 50 || numero > 20){
+if(numero < 50 && numero > 20){
   return true;
 }else{
   return false;
@@ -133,6 +133,16 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+
+  if (numero % 3 == 0 && numero % 5 == 0){
+    return "fizzbuzz";
+  }else if(numero % 3 == 0){
+    return "fizz";
+  }else if(numero % 5 == 0){
+    return "buzz";
+  }else{
+    return numero;
+  }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -187,13 +197,13 @@ function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
 
-  if (numero < 1000|| numero >= 100){
+  if (numero < 1000 && numero >= 100){
     return true;
   }else{
     return false;
   }
 
-  // return (numero < 1000 || numero > 99);
+  // return (numero < 1000 && numero > 99);
 
 }
 
