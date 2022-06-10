@@ -132,8 +132,8 @@ describe('cuentoElementos(arreglo)', function() {
 
 describe('diaDeLaSemana(numeroDeDia)', function() {
   it('should return he name of the day associated with that number', function() {
-    expect(diaDeLaSemana(3)).toBe("Es dia Laboral");
-    expect(diaDeLaSemana(2)).toBe("Es dia Laboral");
+    expect(diaDeLaSemana(3)).toBe("Es día Laboral");
+    expect(diaDeLaSemana(2)).toBe("Es día Laboral");
     expect(diaDeLaSemana(1)).toBe("Es fin de semana");
     expect(diaDeLaSemana(7)).toBe("Es fin de semana");
   });
