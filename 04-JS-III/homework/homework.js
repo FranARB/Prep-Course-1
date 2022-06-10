@@ -369,7 +369,7 @@ if (i < 10) return "Se interrumpió la ejecución"
 
   /*
   let nwarr = [];
-  for(let i=0;i<array.length;i++){
+  for(var i=0;i<array.length;i++){
     numero=numero+2;
     nwarr.push(numero);
     if(numero===I)break;
