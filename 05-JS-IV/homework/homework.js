@@ -81,7 +81,7 @@ function nuevoUsuario (nombre, email, password) {
 function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
-  // Tu código: ---------------------------------------
+  // Tu código: listo
 
   if(usuario["email"]) return true
   else return false
@@ -94,9 +94,13 @@ function tienePropiedad (objeto, propiedad) {
   // De lo contrario, devuelve "false"
   // Tu código: listo
 
-  if (objeto[propiedad]) return true;
-  return false;
+  /*if (objeto[propiedad]) return true
+  return false*/
 
+  //return (objeto[propiedad] === true) ?
+
+  if(objeto.hasOwnProperty(propiedad)) return true
+  return false
 
 }
 
@@ -105,11 +109,7 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código: listo
-
-
   return (usuario.password === password);
-  
-  //if(usuario.password === password) return true
 
 }
 
@@ -118,8 +118,8 @@ function actualizarPassword (usuario, nuevaPassword) {
   // Devuelve el objeto
   // Tu código: listo
   
-  usuario.password = nuevaPassword;
-  return usuario;
+  usuario.password = nuevaPassword
+  return usuario
 
 }
 
@@ -140,6 +140,16 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código: listo
+
+  /*
+  
+  for(let i=0; i<usuarios.length; i++){
+    usuarios[i].esPremium = true
+  }
+  return usuarios
+
+  */
+
 
   for(let i in usuarios){
     usuarios[i].esPremium = true
@@ -177,11 +187,19 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código: listo
 
-  producto.calcularPrecioDescuento = function (){
+  /*producto.calcularPrecioDescuento = function (){
     return this.precio - (this.precio * this.porcentajeDeDescuento);
   }
-  return producto;
+  return producto;*/
+
+  producto.calcularPrecioDescuento = function(){
+   Finalproduct =  producto.precio  - (producto.precio * producto.porcentajeDeDescuento)
+    return Finalproduct
  
+  }
+
+  return producto;
+
 
 }
 
