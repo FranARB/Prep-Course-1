@@ -79,10 +79,10 @@ function agregarStringInvertida() {
     constructor(/*Escribir los argumentos que recibe el constructor*/) {
       // Crea el constructor:
 
-      this.nombre = nombre;
-      this.apellido = apellido;
-      this.edad = edad;
-      this.domicilio = domicilio;
+      this.nombre = Persona.nombre;
+      this.apellido = Persona.apellido;
+      this.edad = Persona.edad;
+      this.domicilio = Persona.domicilio;
       this.detalle = function(){
         return(
           Nombre.this.nombre,
@@ -103,10 +103,6 @@ Persona.prototype.detalle = function(){
           Domicilio.this.domicilio
         );
 }
-
-
-
-
 */
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
@@ -116,7 +112,6 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   let persona = new Persona(nombre, apellido, edad, dir);
   return persona;
 
-
 }
   
 function agregarMetodo() {
@@ -124,10 +119,15 @@ function agregarMetodo() {
   //Ej: "Juan, 22 años"
 
 
-  Persona.prototype.datos = function(){
+  /*Persona.prototype.datos = function(){
     //return '$(this.nombre), $(this.edad) años';
-    return this.nombre + "," + this.edad + " años";
-  };
+    return this.nombre + ", " + this.edad + " años";
+  }*/
+
+  Persona.prototype.datos = function(){
+    return this.nombre + ', ' + this.edad + ' años';
+  }
+
 }
   
 
