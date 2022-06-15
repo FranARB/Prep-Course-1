@@ -34,6 +34,10 @@ function agregarMetodoPrototype(Constructor) {
     const saludo = "Hello World!";
     return saludo;
 
+    /*
+    return "Hello World!";
+    */
+
     }
     }
 
@@ -76,40 +80,37 @@ function agregarStringInvertida() {
     //  }
 
   class Persona {
-    constructor(/*Escribir los argumentos que recibe el constructor*/) {
+    constructor(nombre, apellido, edad, domicilio) {
       // Crea el constructor:
-
       this.nombre = Persona.nombre;
       this.apellido = Persona.apellido;
       this.edad = Persona.edad;
       this.domicilio = Persona.domicilio;
       this.detalle = function(){
-        return(
-          Nombre.this.nombre,
-          Apellido.this.apellido,
-          Edad.this.edad,
-          Domicilio.this.domicilio
-        );
-      };
+        return{
+          nombre: this.nombre,
+          apellido: this.apellido,
+          edad: this.edad,
+          domicilio: this.domicilio
+        };
     }
+    /*detalle() {
+     return {
+      nombre: this.nombre,
+      apellido: this.apellido,
+      edad: this.edad,
+      domicilio: this.domicilio,
+     }
+     //return obj;
+    }*/
+  }
 }
-
-/*
-Persona.prototype.detalle = function(){
-  return(
-          Nombre.this.nombre,
-          Apellido.this.apellido,
-          Edad.this.edad,
-          Domicilio.this.domicilio
-        );
-}
-*/
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
-  let persona = new Persona(nombre, apellido, edad, dir);
+  var persona = new Persona (nombre, apellido, edad, dir);
   return persona;
 
 }
@@ -124,10 +125,10 @@ function agregarMetodo() {
     return this.nombre + ", " + this.edad + " años";
   }*/
 
-  Persona.prototype.datos = function(){
-    return this.nombre + ', ' + this.edad + ' años';
-  }
+  Persona.prototype.datos = function () {
 
+    return this.nombre + ", " + this.edad + " años";
+  }
 }
   
 
