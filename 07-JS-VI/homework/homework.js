@@ -70,6 +70,10 @@ var array2 = array.map((elemento) =>{
 }) // en vez de "=> colocar function(i), otra forma"
 return array2;
 */
+
+/*
+return array.map(cb)
+ */
 }
 
 function filter(array) {
