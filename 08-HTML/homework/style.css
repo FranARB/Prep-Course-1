@@ -1,0 +1,25 @@
+<style>
+        h1 {
+            color: violet;
+        }
+        img{
+            width: 400px;
+        }
+
+        #thdiv{
+            height: 600px;
+            width: 500px;
+            background-color: lightblue;
+            padding: 50px;
+            border: 15px  brown dotted;
+
+        
+        }
+
+        #spanId{
+            font-size: 18px;
+            margin: 50px;
+            
+        }
+
+    </style>
