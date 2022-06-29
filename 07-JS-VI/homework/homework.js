@@ -36,7 +36,21 @@ function sumarArray(numeros, cb) {
     suma = suma + numeros[i];
   }
 cb(suma);
+/*
+var sumaTotal = 0;
+for(var numero of numeros){
+  sumaTotal = sumaTotal + numero;
+}
+return cb(sumaTotal);
 
+
+/////////////////////////////////////////
+
+var sumaTotal = numeros.reduce(function(acumulador, valorActual){
+  return acumulador + valorActual
+})
+
+*/
 
 }
 
@@ -48,6 +62,10 @@ function forEach(array, cb) {
   for(var i=0; i<array.length; i++){
     cb(array[i]);
   }
+
+  /*
+  
+  */
 }
 
 function map(array, cb) {
@@ -93,6 +111,15 @@ return arr2;
 var arr2 = array.filter(function(elemento){
   return elemento === "a";
 })
+return arr2;
+
+///////////////////////////////////
+
+var arr2 = [];
+
+for(var key of array){
+  if(key[0] === "a") arr2.push(key)
+}
 return arr2;
 */
 
