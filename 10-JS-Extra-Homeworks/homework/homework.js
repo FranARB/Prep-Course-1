@@ -38,6 +38,17 @@ function numberOfCharacters(string) {
   
  }
 return obj;
+
+
+/*
+for(let i=0;i<string.length;i++){
+  if(objeto[string[i]]){
+    obj[string[i]] = 0;
+  }
+  obj[string[i]] +=1;
+}
+return obj;
+*/
 }
 
 
@@ -61,7 +72,19 @@ function capToFront(s) {
   let arrfin = arr1.concat(arr2); //concatena 2 arrays
   let string = arrfin.join(""); //agrego el array a la string
   return string;
+/*
+var minus = "";
+var mayus = "";
 
+for(i=0; i <s.lenght; i++){
+  if(s[i]===s[i].toUpperCase()){
+    mayus = mayus + s[i];
+  }else{
+      minus = minus + s[i];
+    }
+}
+return (mayus + minus);
+*/
 }
 
 
@@ -79,24 +102,33 @@ function asAmirror(str) {
   let result = newArrInv.join(" ");
   return result;
   
+/*
+var mirror = ""
+
+for(let i = str.length; i>=o; i--){
+mirro += str[i];
+}
+return mirror.split(" ").reverse().join(" ");
+*/
 
 
 
-//   let hiarr = [];
-//   let word = str.split(" "); //["The", "Henry", "Challenge", "is", "close!"]
 
-//   for (let i = 0; i < word.lengtht; i++) {
-//     var arr2 = word[i].split(""); // => ["e", "h", "T"]
-//     var arrInversa = []; 
-//     for (let j = arr2.length - 1; j >= 0; j--) {
-//       let letra = arr2[j];
-//       arrInversa.push(letra);
-//     }
-//     let palabra = arrInversa.join("");
-//     hiarr.push(palabra);
-//   }
-// let franseinvertida = hiarr.join(" ");
-// return franseinvertida;
+/*   let hiarr = [];
+   let word = str.split(" "); //["The", "Henry", "Challenge", "is", "close!"]
+  
+for (let i = 0; i < word.lengtht; i++) {
+     var arr2 = word[i].split(""); // => ["e", "h", "T"]
+     var arrInversa = []; 
+     for (let j = arr2.length - 1; j >= 0; j--) {
+      let letra = arr2[j];
+       arrInversa.push(letra);
+     }
+     let palabra = arrInversa.join("");
+     hiarr.push(palabra);
+   }
+let franseinvertida = hiarr.join(" ");
+ return franseinvertida;*/
 } 
 
 
@@ -117,7 +149,15 @@ return "No es capicua";
   // if(numString.join("") === NewNumber.join("")){
   //   return "No es capicua";
   // }else return "Es capicua";
+/*
+var numero1 = numero.toString()
+var numeroinv = ""
 
+for(var i= numero1.length - 1; i>=0; i--){
+  numeroinv +=numero1[i];
+}
+
+*/
 }
 
 
@@ -130,6 +170,16 @@ function deleteAbc(cadena){
   let result = newString.filter((value)=>value !== "a" && value !== "b" && value !== "c").join("");
 
   return result;
+
+/*
+var miCadena = "";
+
+for(var i=0; i<cadena.length; i++){
+  if(cadena[i] !== "a" && cadena[i] !== "b" && cadena[i] !== "c") miCadena += cadena[i]
+}
+return miCadena;
+*/
+
 }
 
 
@@ -140,6 +190,25 @@ function sortArray(arr) {
 let sorted = arr.sort((a,b) => a.length - b.length);
 
 return sorted;
+
+
+/*
+no//function ordenCreciente(a, b){
+
+  if(a.length < b.length)return -1;
+
+  if(a.length > b.length)return 1;
+  return 0;
+}no
+
+return arr.sort(function(a,b) {
+  if(a.length < b.length)return -1;
+
+  if(a.length > b.length)return 1;
+  return 0;
+})
+
+*/
 }
 
 
@@ -152,6 +221,19 @@ function buscoInterseccion(arreglo1, arreglo2){
   let result = arreglo1.filter((value) => arreglo2.includes(value));
 
   return result;
+
+/*
+  var miArray = [];
+
+  for(var i = 0; i < arreglo1.length; i++) {
+    for(var j = 0; j < arreglo2.length; j++){
+      if(arreglo1[i]===arreglo2[j])miArray.push(arreglo1[i])
+    }
+  }
+
+  return miArray;
+*/
+
 
 }
 
