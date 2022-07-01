@@ -231,6 +231,8 @@ function buscoInterseccion(arreglo1, arreglo2){
     }
   }
 
+  //return arr.sort((a,b) => ordenCreciente(a,b))
+
   return miArray;
 */
 
